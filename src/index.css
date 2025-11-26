@@ -1,0 +1,97 @@
+@import "tailwindcss";
+/* ============================
+   Registration Page Styling
+   ============================ */
+
+#reg-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+#reg-box {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.7s ease;
+}
+
+.reg-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #4e54c8;
+}
+
+.reg-inputs .reg-field input {
+  padding: 12px;
+  border-radius: 10px !important;
+  border: 2px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.reg-inputs .reg-field input:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 10px rgba(78, 84, 200, 0.3);
+}
+
+.reg-btn {
+  background: #4e54c8 !important;
+  padding: 12px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.reg-btn:hover {
+  background: #6a6ffb !important;
+  transform: translateY(-2px);
+}
+
+.social-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-btn {
+  background-color: #4e54c8 !important;
+  color: white !important;
+  transition: 0.25s ease;
+}
+
+.social-btn:hover {
+  background-color: #6a6ffb !important;
+  transform: scale(1.1);
+}
+
+/* forgot link */
+#reg-box a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#reg-box a:hover {
+  text-decoration: underline;
+}
+
+/* fade effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
