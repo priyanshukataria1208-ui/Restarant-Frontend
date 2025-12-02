@@ -11,7 +11,7 @@ const Navbar = () => {
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" id="logo">
-              🍔Zomato
+              🍔Restaurant
               </NavLink>
 
               <button
@@ -35,7 +35,7 @@ const Navbar = () => {
                  
                     
                       <li className="nav-item">
-                        <NavLink className="nav-link" to="/Reg">
+                        <NavLink className="nav-link " to="/Reg">
                           Registration
                         </NavLink>
                       </li>
